@@ -1,6 +1,9 @@
-const getLastCar = require('../problem2');
-const inventory = require('../inventory'); 
+const problem2 = require("../problem2");
 
+const inventory = require("../inventory");
 
-const lastCar = getLastCar(inventory);
-console.log(`Last car is a ${lastCar.car_make} ${lastCar.car_model}`);
+const result = problem2(inventory);
+
+if (problem2) {
+  console.log(`Last car is a ${result.car_make} ${result.car_model}`);
+} else console.log("No car");
